@@ -17,14 +17,16 @@
     <h1>Iniciando estudos em DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Estudos em <strong>DOM</strong> Js</p>
-    <div id="botao">Clique em mim</div>
+    <div id="botao">Não clique em mim</div>
     <p id="nomes"></p>
+    <p id="oi"></p>
     <script>
        var nome = window.prompt('Qual o seu nome?')
         var p1 = document.getElementsByTagName('p')[0] 
         window.document.write('No primeiro paragrafo está escrito "' + p1.innerText + '"')
         document.getElementById('nomes').innerText = 'Meu nome é ' + nome
         var botao = document.getElementById('botao')
+        document.getElementById('oi').innerText = 'Olá, ' + nome
 
     </script>
 </body>
