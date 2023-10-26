@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font:normal 18pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Estudos em <strong>DOM</strong> Js</p>
+    <div id="botao">Clique em mim</div>
+    <p id="nomes"></p>
+    <script>
+       var nome = window.prompt('Qual o seu nome?')
+        var p1 = document.getElementsByTagName('p')[0] 
+        window.document.write('No primeiro paragrafo está escrito "' + p1.innerText + '"')
+        document.getElementById('nomes').innerText = 'Meu nome é ' + nome
+        var botao = document.getElementById('botao')
+
+    </script>
+</body>
+</html>
